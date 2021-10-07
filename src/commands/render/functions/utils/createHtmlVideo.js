@@ -23,7 +23,7 @@ export default async function createHtmlVideo(videoId, outputPath, prefix, title
   const html = await loadTemplate('atom.video');
   const data = {
     video,
-    videoId
+    videoId,
   };
   const template = Handlebars.compile(html);
   return template(data);
